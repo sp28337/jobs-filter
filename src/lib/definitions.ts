@@ -1,3 +1,8 @@
+type optionSchema = {
+    value: string;
+    label: string;
+}
+
 export type mockDataSchema = {
     id: number;
     title: string;
@@ -5,3 +10,5 @@ export type mockDataSchema = {
     location: string;
     experience: string;
 }
+
+export type expOptionsSchema = optionSchema[]

@@ -1,16 +1,65 @@
 .container {
-    margin: 100px 0;
+    margin: 100px auto;
+    max-width: 1440px;
+    padding: 0 150px;
+    position: relative;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.filter {
+    border: 1px solid #d8d8d8;
+    border-radius: 25px;
+    padding: 30px;
+    width: 30%;
+}
+
+.filterTitle {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    
+}
+
+.filterExpWrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filterExpLabel {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.select {
+    font-size: 18px;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 16px;
+    background-color: transparent;
+    border: 1px solid #d8d8d8;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.option {
+    color: rgba(0, 0, 0, 0.6);   
+}
+
+.listItems {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 70%;
 }
 
 .itemWrapper {
     display: flex;
     flex-direction: column;
-    width: 500px;
     height: auto;
-    margin: 0 auto;
     border: 1px solid #d8d8d8;
     border-radius: 25px;
     backdrop-filter: drop-shadow(2px 4px 6px black);
@@ -47,4 +96,10 @@
     width: 35%;
     padding: 10px;
     transform: translateY(10px);
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 5%;
+    }
 }

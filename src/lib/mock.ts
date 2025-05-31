@@ -20,14 +20,14 @@ export const mockData: mockDataSchema[] = [
         "title": "Senior Frontend Developer",
         "salary": "от 300 000 ₽",
         "location": "Санкт-Петербург / Удалённо",
-        "experience": "от 5 лет"
+        "experience": "5 лет и более"
     },
     {
         "id": 4,
         "title": "Middle NextJS Developer",
         "salary": "от 120 000 ₽",
         "location": "Нижний Новгород",
-        "experience": "2-3 года"
+        "experience": "3-5 лет"
     },
         {
         "id": 5,
@@ -48,6 +48,6 @@ export const mockData: mockDataSchema[] = [
         "title": "Senior Backend Developer",
         "salary": "от 320 000 ₽",
         "location": "Москва / Удалённо",
-        "experience": "от 4 лет"
+        "experience": "5 лет и более"
     },
 ]
