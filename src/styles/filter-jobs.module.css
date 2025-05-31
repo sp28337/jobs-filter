@@ -1,0 +1,139 @@
+.container {
+    margin: 100px auto;
+    max-width: 1440px;
+    padding: 0 150px;
+    position: relative;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.filter {
+    border: 1px solid #d8d8d8;
+    border-radius: 25px;
+    padding: 30px;
+    width: 30%;
+    height: 100dvh;
+}
+
+.filterTitle {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    
+}
+
+.filterExpWrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filterExpLabel {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.select {
+    font-size: 18px;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 16px;
+    background-color: transparent;
+    border: 1px solid #d8d8d8;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.option {
+    color: rgba(0, 0, 0, 0.6);   
+}
+
+.listItems {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 70%;
+}
+
+.itemWrapper {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border: 1px solid #d8d8d8;
+    border-radius: 25px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+
+.title {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.salary {
+    font-weight: 500;
+}
+
+.experience {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.button {
+    background-color: rgb(25, 197, 160);
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid #bbbbbb;
+    border-radius: 13px;
+    width: 35%;
+    padding: 10px;
+    transform: translateY(10px);
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fadeIn {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-duration: 1s;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .filter {
+        width: 100%;
+        height: initial;
+    }
+
+    .listItems {
+        width: 100%;
+    }
+
+    .button {
+        width: 45%;
+    }
+}
