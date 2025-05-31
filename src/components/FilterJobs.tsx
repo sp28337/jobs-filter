@@ -62,18 +62,17 @@ export function FilterJobs() {
                 {
                     filteredJobs.map((item) => {
                         return (
-
-                            <div className={styles.itemWrapper}>
+                            <div className={`${styles.itemWrapper} ${styles.fadeIn}`}>
                                 <li 
                                     key={item.id}
-                                    className={styles.item}
+                                    className={`${styles.item} ${styles.fadeIn}`}
                                 >
                                     <h2 className={styles.title}>{item.title}</h2>
                                     <p className={styles.salary}>{item.salary}</p>
                                     <p className={styles.location}>{item.location}</p>
                                     <p className={styles.experience}>{item.experience}</p>
                                     <button className={styles.button}>
-                                            подробнее
+                                        подробнее
                                     </button>
                                 </li>
                             </div>

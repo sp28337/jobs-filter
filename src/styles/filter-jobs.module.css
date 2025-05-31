@@ -13,6 +13,7 @@
     border-radius: 25px;
     padding: 30px;
     width: 30%;
+    height: 100dvh;
 }
 
 .filterTitle {
@@ -62,9 +63,7 @@
     height: auto;
     border: 1px solid #d8d8d8;
     border-radius: 25px;
-    backdrop-filter: drop-shadow(2px 4px 6px black);
 }
-
 
 .item {
     display: flex;
@@ -98,8 +97,43 @@
     transform: translateY(10px);
 }
 
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fadeIn {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-duration: 1s;
+}
+
 @media (max-width: 1024px) {
     .container {
         padding: 0 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .filter {
+        width: 100%;
+        height: initial;
+    }
+
+    .listItems {
+        width: 100%;
+    }
+
+    .button {
+        width: 45%;
     }
 }
