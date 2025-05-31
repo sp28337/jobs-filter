@@ -1,17 +1,19 @@
-export const mockData = [
+import { mockDataSchema } from "./definitions";
+
+export const mockData: mockDataSchema[] = [
     {
         "id": 1,
         "title": "Junior Frontend Developer",
         "salary": "до 80 000 ₽",
         "location": "Ярославль / Удалённо",
-        "experience": "1–3 года"
+        "experience": "1-3 года"
     },
     {
         "id": 2,
         "title": "Middle React Developer",
         "salary": "от 120 000 ₽",
         "location": "Москва",
-        "experience": "3–5 лет"
+        "experience": "3-5 лет"
     },
         {
         "id": 3,
@@ -32,7 +34,7 @@ export const mockData = [
         "title": "Junior Backend Developer",
         "salary": "до 100 000 ₽",
         "location": "Иркутск / Удалённо",
-        "experience": "1–3 года"
+        "experience": "1-3 года"
     },
     {
         "id": 6,
